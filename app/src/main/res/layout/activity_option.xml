@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_option"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/option_bg"
+    android:orientation="vertical"
+    tools:context="com.tdtf.weili.activity.Option">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_power_9"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="600dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_user_9"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="30dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_press_7"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="压力："
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <TextClock
+                android:id="@+id/textClock7"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="873dp"
+            android:layout_height="455dp"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="33dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="33dp"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/diarylist"
+                    style="@style/Widget.AppCompat.Light.ListView.DropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_diary_quary"
+                android:layout_width="144dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="79dp"
+                android:background="@drawable/button_search_quary" />
+
+            <Button
+                android:id="@+id/btnback"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="144dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="579dp"
+                android:background="@drawable/button_no" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragLayout"
+        android:layout_width="765dp"
+        android:layout_height="438dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"></LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context="com.tdtf.weili.fragment.working.Wuran_five">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView155"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/start1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/text_2550"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="25~50um"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView153"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="50~100um"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=">100um"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView158"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="计 数"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/text_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/text_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/text_100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+</LinearLayout>

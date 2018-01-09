@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenu_bg"
+    android:orientation="vertical"
+    tools:context="com.tdtf.weili.activity.MainMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/text_power_0"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="600dp"
+            android:text="权限："
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_user_0"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="用户名："
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textpressclean_0"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="压力："
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextClock
+            android:id="@+id/textClock13"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="86dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnjccz"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="255dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/button_mainmenu_jccz"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btnjcsz"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/button_mainmenu_jcsz"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btntdsz"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/button_mainmenu_tdsz"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btnqxcz"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_mainmenu_qxcz"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btnqtsz"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/button_mainmenu_qtsz"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/btntdbd"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/button_mainmenu_tdbd"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView150"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="检测方式："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_info_0"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView147"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="预  走  量："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_info_1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView160"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="加压方式："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_info_2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView157"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="取  样  量："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_info_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView166"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="检测次数："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_info_4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView164"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="计        数："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_info_5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_biaozhun"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="检测标准："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_info_6"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView169"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="加压数值："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_info_7"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="92dp"
+                android:background="@drawable/mainmenu_17"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_mix_down"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_mainmenu_mix_down" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:max="24"
+                    android:progress="1"
+                    android:progressDrawable="@drawable/my_bar" />
+
+                <Button
+                    android:id="@+id/btn_mix_up"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_mainmenu_mix_up" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/speed_bg"
+    android:orientation="vertical"
+    tools:context="com.tdtf.weili.activity.Speed">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_power_13"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="600dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_user_13"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_press_11"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="压力："
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextClock
+            android:id="@+id/textClock14"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/textView181"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取样速度："
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edit_speed_sample"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:text="15"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/textView180"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回推速度："
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edit_speed_back"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:text="15"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/textView179"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清洗速度："
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edit_speed_clean"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:ems="5"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:text="15"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView213"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="取样速度输入范围：5~60"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView207"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="回推速度输入范围：5~60"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView206"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="清洗速度输入范围：5~60"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="120dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/textView187"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取样速度："
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edit_speed_special"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:text="15"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView205"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="取样速度输入范围：5~150"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView216"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"
+                android:text="该流速设置只用于\n8368_05标准"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="144dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="79dp"
+            android:background="@drawable/button_yes" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="144dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="578dp"
+            android:background="@drawable/button_no" />
+    </LinearLayout>
+
+</LinearLayout>

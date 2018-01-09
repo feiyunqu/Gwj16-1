@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:context="com.tdtf.weili.fragment.working.Mazuiqiju">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView155"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/start1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/textView154"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="4~6um"
+            android:textColor="@android:color/background_dark"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/textView153"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="≥5um"
+            android:textColor="@android:color/background_dark"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView158"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="计 数"
+            android:textColor="@android:color/background_dark"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/text_46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/text_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+</LinearLayout>

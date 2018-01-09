@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600dp"
+    android:layout_height="306dp"
+    android:background="@drawable/cleanstop"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:context="com.tdtf.weili.fragment.CleanStop">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/text_t"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="30dp"
+        android:text="请更换空白液或清洗液然后点击确认"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_cleanstop_go"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_cleanstop_stop"
+        android:visibility="visible" />
+</LinearLayout>

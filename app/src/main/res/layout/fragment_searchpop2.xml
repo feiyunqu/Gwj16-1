@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cleanstop"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.tdtf.weili.fragment.Searchpop">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <AutoCompleteTextView
+        android:id="@+id/edit_autoUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="center"
+        android:hint="请输入用户名"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_power"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/background_light"
+        android:text="选择权限"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_dataStart"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/background_light"
+        android:text="选择起始日期"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_dataEnd"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/background_light"
+        android:text="选择结束日期"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_quary"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="确定"
+        android:textSize="24sp" />
+
+</LinearLayout>

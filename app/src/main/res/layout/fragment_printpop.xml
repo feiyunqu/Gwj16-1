@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/printpop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/print_select"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.tdtf.weili.fragment.Printpop">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <CheckBox
+        android:id="@+id/print_once"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="自动单次打印"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/print_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="自动全部打印"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/print_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="打印实验信息"
+        android:textSize="24sp" />
+</LinearLayout>

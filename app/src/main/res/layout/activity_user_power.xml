@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userpower_bg"
+    android:orientation="vertical"
+    tools:context="com.tdtf.weili.activity.UserPower">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_power_16"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="600dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_user_16"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_press_12"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="压力："
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextClock
+            android:id="@+id/textClock12"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="72dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.48"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/power_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_group_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="管理员"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_group_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="操作员"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radio_group_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="维护员"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/radiofragment"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_weight="0.48"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_weight="0.16"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/spinner_power"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_bg"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/edit_user"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_bg"
+                android:ems="5"
+                android:gravity="center"
+                android:hint="请输入用户名"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_bg"
+                android:ems="5"
+                android:gravity="center"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_truepassword"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_bg"
+                android:ems="5"
+                android:gravity="center"
+                android:hint="再次确认密码"
+                android:inputType="textPassword"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/alert_light_frame"
+                    android:text="添加新用户"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnupdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/alert_light_frame"
+                    android:text="信息修改"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="79dp"
+            android:background="@drawable/button_yes"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="580dp"
+            android:background="@drawable/button_no"
+            android:textColor="@android:color/background_dark" />
+
+    </LinearLayout>
+
+</LinearLayout>

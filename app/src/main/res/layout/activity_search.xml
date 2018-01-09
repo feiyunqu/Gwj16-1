@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_bg"
+    android:orientation="vertical"
+    tools:context="com.tdtf.weili.activity.Search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_power_12"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="600dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_user_12"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_press_10"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="压力："
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextClock
+            android:id="@+id/textClock10"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:elevation="1dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <HorizontalScrollView
+            android:layout_width="628dp"
+            android:layout_height="425dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/partner_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="268dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/edit_bg"
+                android:ems="10"
+                android:hint="请输入实验名称或关键字"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnbiaozhun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/background_light"
+                android:text="选择标准"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btndatepickstart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/background_light"
+                android:text="选择起始日期"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btndatepickend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/background_light"
+                android:text="选择结束日期"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnquery"
+            android:layout_width="144dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="79dp"
+            android:background="@drawable/button_search_quary" />
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="144dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="579dp"
+            android:background="@drawable/button_no" />
+
+    </LinearLayout>
+
+</LinearLayout>

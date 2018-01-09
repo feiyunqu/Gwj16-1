@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="method">
+        <item>自动</item>
+        <item>手动</item>
+        <item>体积测定</item>
+    </string-array>
+    <string-array name="style">
+        <item>自动</item>
+        <item>手动</item>
+    </string-array>
+    <string-array name="power">
+        <item>管理员</item>
+        <item>操作员</item>
+        <item>维护员</item>
+    </string-array>
+</resources>

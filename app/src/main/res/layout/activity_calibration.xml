@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calibration_bg"
+    android:orientation="vertical"
+    tools:context="com.tdtf.weili.activity.Calibration"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_power_1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="600dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_user_1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_press_1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="压力："
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextClock
+            android:id="@+id/textClock2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="29dp"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_bcsz"
+                android:layout_width="255dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_calibration_bcsz" />
+
+            <Button
+                android:id="@+id/btn_bdcz"
+                android:layout_width="255dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/button_calibration_bdcz" />
+
+            <Button
+                android:id="@+id/btn_bdcs"
+                android:layout_width="255dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/button_calibration_bdcs" />
+
+            <Button
+                android:id="@+id/btn_zscd"
+                android:layout_width="255dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/button_calibration_cscd" />
+
+            <Button
+                android:id="@+id/btn_user"
+                android:layout_width="255dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/button_calibration_user" />
+
+            <Button
+                android:id="@+id/btn_xzcs"
+                android:layout_width="255dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/button_calibration_xzcs" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView172"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="当前标尺："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_dqbc"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="标尺一"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView174"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="回推速度："
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_back_speed"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView170"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="标定方法："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_bdff"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="乳胶法"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView175"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="取样速度："
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_bd_speed"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textbdpoint"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="标定点数："
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_bd_point"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="008"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView177"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="清洗速度："
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_clean_speed"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView224"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="8368_05 速度参数"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView230"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="取样速度："
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text8368"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="144dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="796dp"
+            android:background="@drawable/button_no" />
+
+    </LinearLayout>
+</LinearLayout>

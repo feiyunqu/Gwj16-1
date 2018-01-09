@@ -1,0 +1,319 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.tdtf.weili.fragment.result.MazuiSearch">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="740dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="50dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView209"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="样品名称："
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:ems="21"
+                android:inputType="text|textPersonName"
+                android:labelFor="@+id/edit_name"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView234"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="样品批号："
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_pihao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:ems="21"
+                android:inputType="number"
+                android:labelFor="@+id/edit_name"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_pihao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView155"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/start1"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/textView154"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="4~6um"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/textView153"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="≥5um"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="48sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView158"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="计 数"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/text_46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_bg"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/text_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="48sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView210"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ds8"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView211"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="麻醉器具"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ds10"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="@string/ds11"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView217"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ds12"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_times"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="@string/ds13"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView215"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ds14"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_tiji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ds15"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnnext"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:background="@android:drawable/alert_light_frame"
+            android:text="@string/dsb0"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnaverage"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:background="@android:drawable/alert_light_frame"
+            android:text="@string/dsb1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btndelet"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:background="@android:drawable/alert_light_frame"
+            android:text="@string/dsb2"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnclear"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:background="@android:drawable/alert_light_frame"
+            android:text="@string/dsb3"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnsave"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:background="@android:drawable/alert_light_frame"
+            android:text="@string/dsb4"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnprint"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:background="@android:drawable/alert_light_frame"
+            android:text="打印当前页"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:ignore="TooManyViews" />
+
+        <Button
+            android:id="@+id/btnprintall"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:background="@android:drawable/alert_light_frame"
+            android:text="打印全部页"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

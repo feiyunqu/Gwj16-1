@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detect_opt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detectopt_bg"
+    android:orientation="vertical"
+    tools:context="com.tdtf.weili.activity.DetectOpt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_power_7"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="600dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_user_7"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_press_5"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="压力："
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextClock
+            android:id="@+id/textClock6"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.64"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_jcfs"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="检测方式："
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_jcfs"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:text="点击选择"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView190"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="86dp"
+                android:text="加压方式："
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_qyfs"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:text="点击选择"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="100dp"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView_yuzou"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                android:text="预  走  量："
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edityz"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:ems="2"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:labelFor="@+id/edityz"
+                android:selectAllOnFocus="true"
+                android:text="@string/deteopt8"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView218"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ml"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView_quyang"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="54dp"
+                android:text="取  样  量："
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editqy"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg"
+                android:ems="2"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:labelFor="@+id/editqy"
+                android:selectAllOnFocus="true"
+                android:text="@string/deteopt9"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView220"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ml"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="100dp"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView_cishu"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="检测次数："
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editjccs"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:ems="2"
+                android:gravity="center"
+                android:inputType="number"
+                android:labelFor="@+id/editjccs"
+                android:selectAllOnFocus="true"
+                android:text="@string/deteopt10"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView171"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="次"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView_press"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="54dp"
+                android:text="压力数值："
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editqywz"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg"
+                android:ems="2"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:labelFor="@+id/editqywz"
+                android:selectAllOnFocus="true"
+                android:text="@string/deteopt11"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView208"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bar"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="100dp"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView_jishu"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="计        数："
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editjs"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg"
+                android:ems="2"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:labelFor="@+id/editjs"
+                android:selectAllOnFocus="true"
+                android:text="@string/deteopt12"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView222"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ml"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="144dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="79dp"
+            android:background="@drawable/button_yes"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="144dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="578dp"
+            android:background="@drawable/button_no"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
